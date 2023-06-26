@@ -1,0 +1,283 @@
+BODY {
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family:  arial,helvetica,sans-serif; 
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  A:visited {
+    color: #C00000;
+  }
+  
+  H1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;  
+    color: #C00000;
+  }
+  
+  H3.red {
+    margin-bottom: 0px;
+    text-align: left;  
+    color: #C00000;
+  }
+  
+  IMG.headl {
+    margin-right: 10px;
+  }
+  
+  IMG.headr {
+    margin-left: 10px;
+  }
+  
+  IMG.linkhome {
+    float: left;
+    border: 0px;
+  }
+  
+  IMG.egypnum {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60px;
+  }
+  
+  TABLE.frame {
+    margin-top: 2ex;
+    margin-bottom: 2ex;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 2px ridge  #0000C0;
+  }
+  
+  TABLE.frame TD {
+    border: 2px ridge #0000C0;
+    padding: 8px;
+  }
+  
+  TABLE.frame TH {
+    border: 2px ridge #0000C0;
+    padding: 10px;
+  }
+  
+  TR.centre {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  TABLE.cols {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none;
+  }
+  
+  TABLE.cols TD {
+    border-style: none;
+    padding: 4px;
+  }
+  
+  TABLE.small {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none;
+  }
+  
+  TABLE.small TD {
+    border-style: none;
+    font-size: 9px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  TABLE.small TH {
+    border-style: none;
+    font-size: 9px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  TABLE.closeup {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none;
+    border-collapse: collapse;
+  }
+  
+  TABLE.closeup TD {
+    border-style: none;
+    padding: 0px;
+  }
+  
+  TABLE.sum {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none;
+    border-collapse: collapse;
+  }
+  
+  TABLE.sum TD {
+    border-style: none;
+    padding: 0px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  TD.centre {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  TD.white {
+    color: #FFFFFF;
+  }
+  
+  TD.roman {
+    font-family: "Times New Roman", "Times", "Serif"
+  }
+  
+  TD.clay {
+    background-color: #FFF080;
+  }
+  
+  TABLE.wide {
+    margin-left: -5%;
+    margin-right: -5%;
+  }
+  
+  TABLE.tab {
+    margin-top: 2ex;
+    margin-bottom: 2ex;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 1px ridge #0000C0;
+  }
+  
+  TABLE.tab TD {
+    border: 1px ridge #0000C0;
+    padding: 3px;
+  }
+  
+  TABLE.tab TH {
+    border: 1px ridge #0000C0;
+    padding: 3px;
+  }
+  
+  HR {
+    color: #C00000;
+    background-color: #C00000;
+    height: 1px;
+    border: 0px;
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+  }
+  
+  HR.sum {
+    color: black;
+    background-color: black;
+    height: 2px;
+    border: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  UL.centre {
+    margin-left: 20%;
+  }
+  
+  UL.tab {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  P.copyright {
+    margin-top: -1ex;
+    font-size: 10px;
+    text-align: center; 
+  }
+  
+  P.subhead {
+    font-size: 12px;
+    text-align: center; 
+    margin-top: 0px;
+    margin-bottom: 2ex;
+  }
+  
+  P.indent {
+    margin-left: 20%;
+  }
+  
+  P.big {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;  
+  
+  }
+  
+  SPAN.dull {
+    color: #808080;
+    background-color: white;
+  }
+  
+  SPAN.computery {
+    color: cyan;
+    background-color: black;
+  }
+  
+  SPAN.red {
+    color: red;
+    font-size: 32px;
+  }
+  
+  INPUT.screen {
+    font-size: 30px; 
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  INPUT.pract {
+    font-size: 20px; 
+    color: #000000;
+    font-weight: bold;
+    width: 20px;
+  }
+  
+  INPUT.spract {
+    font-size: 10px; 
+    color: #000000;
+    font-weight: bold;
+    width: 12px;
+  }
+  
+  TD.pract {
+    font-size: 20px; 
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  LI.sep {
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+  }
+  
+  INPUT.button {
+    background-color: #FFF0E0;
+    font-size: 40px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }

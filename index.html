@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META NAME="Description" CONTENT="Babylonian Numbers">
+<META NAME="keywords" CONTENT="classical, babylonian, numbers">
+<TITLE>Babylonian Numbers</TITLE>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="style.css">
+<SCRIPT TYPE="TEXT/JAVASCRIPT">
+
+// Definitions 
+
+var numer = 0 
+var errmes=''
+var sum = -1
+var ctr = 0
+
+// Convert number to babylonian
+
+function chk(num) {
+
+  document.getElementById('outp').innerHTML = '<IMG SRC="num0.gif">'
+  errmes=''
+
+  if (num!= parseInt(num)) 
+    {errmes = 'You have entered ' + num + '\nPlease enter a whole number'}
+  if (num < 0) 
+    {errmes = 'You have entered ' + num + '\nPlease enter a positive number'}
+  if (num > 99999) 
+    {errmes = 'You have entered ' + num + '\nPlease enter a number less than 100000'}
+
+  if (errmes!='') {alert (errmes)}
+}
+
+// Convert number to babylonian
+
+function babyloniannum(num) {
+
+  chk (num)
+  if (errmes!='') {return}
+
+  outlit = ''
+  power = 0
+  while (num > 0) { 
+    work = num % 60 
+    num = parseInt(num / 60)
+    units = work % 10 
+    tens = work - units 
+    if (units > 0) {outlit = '<IMG SRC="num' + units + '.gif">' + outlit}
+    if (tens > 0) {outlit = '<IMG SRC="num' + tens + '.gif">' + outlit}
+    if (units == 0 && tens == 0 && power > 0) {outlit = '<IMG SRC="zero.gif">' + outlit}
+    power++
+  } 
+
+
+  if (outlit != '') {document.getElementById('outp').innerHTML = outlit}
+}
+
+// Set up count
+
+function setcount() {
+
+  if (sum > -1) {alert ("Click on Stop Counting"); return}
+  
+  ctr = parseInt(document.conv.count.value)
+  chk (ctr); if (errmes!='') {return}
+  sum = parseInt(document.conv.numb.value)
+  if (sum<0 || sum >99999) {sum = 0}
+
+  countnum () 
+}
+
+// Count Babylonian numbers
+
+function countnum () {
+
+  if (sum == -1) {return}
+  sum = sum + ctr; if (sum > 99999) {sum = -1; return}
+
+  document.conv.numb.value = sum
+
+  babyloniannum(sum) 
+
+  setTimeout("countnum()",1000) 
+}
+
+// Step count
+
+function step() {
+
+  if (sum > -1) {alert ("Click on Stop Counting"); return}
+  
+  ctr = parseInt(document.conv.count.value)
+  chk (ctr); if (errmes!='') {return}
+  num = parseInt(document.conv.numb.value)
+  if (num<0 || num >99999) {num = 0}
+  num++
+
+  document.conv.numb.value = num
+
+  babyloniannum(num) 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY></BODY>
+
+</HTML>
